@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+  font-family: "Rubik", sans-serif;
+  z-index: 0;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  width: 100vw;
+}
+
+.container {
+  color: white;
+  width: 55vw;
+  /* bosrder: 2px solid red; */
+  /* width: fit-content; */
+  margin: 0 auto;
+  height: 51vh;
+  margin-top: 25vh;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --------------------- GRID ITEMS ------------------- */
+
+.grid-item {
+  /* border: 2px solid red; */
+  border-radius: 0.7rem;
+  /* width: 12vw; */
+  height: 23.8vh;
+  position: relative;
+}
+
+.item-inner {
+  /* border: 2px solid green; */
+  border-radius: 0.5rem;
+  background-color: hsl(235, 46%, 20%);
+  margin-top: 4.2vh;
+  height: 19.8vh;
+  /* width: 100%; */
+  padding: 2.6vh 1.3vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.item-inner:hover {
+  background-color: #34397b;
+}
+
+.dots {
+  position: absolute;
+  /* border: 2px solid red; */
+  height: fit-content;
+  width: fit-content;
+  top: 1.8vh;
+  right: 1.5vw;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.item-header {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-time {
+  font-size: 2.5rem;
+  margin-top: 2.4vh;
+}
+
+.previous-time {
+  color: #959adc;
+  margin-top: 1vh;
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+
+.person {
+  background-color: hsl(235, 46%, 20%);
+  height: 100%;
+  grid-row: span 2;
+}
+
+.item-person-inner {
+  background-color: #5746ea;
+  height: 34.5vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3vh 1.5vw;
+}
+
+#person {
+  height: 10vh;
+  width: 10vh;
+  border: 4px solid white;
+  border-radius: 100%;
+}
+
+.person-header {
+  color: #b3acff;
+  margin-top: 3vh;
+  font-size: 0.9rem;
+}
+
+.name {
+  font-size: 2rem;
+  margin-top: 1vh;
+}
+
+.classify {
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 1.5vw;
+}
+
+.daily,
+.weekly,
+.monthly {
+  color: #5d5983;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 1vh;
+  cursor: pointer;
+}
+
+.daily:hover,
+.weekly:hover,
+.monthly:hover {
+  color: whitesmoke;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.icon {
+  position: absolute;
+  height: 7vh;
+  right: 1%;
+  z-index: 1;
+}
+
+.selected {
+  color: white;
+}
+

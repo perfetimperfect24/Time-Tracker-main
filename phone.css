@@ -1,0 +1,94 @@
+@media screen and (max-width: 580px) {
+  body {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  html,
+  body {
+    height: 150%;
+  }
+
+  .container {
+    margin-top: 0vh;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fill, minmax(80vw, 80vw));
+  }
+
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .item-person-inner {
+    height: 20vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    width: fit-content;
+  }
+
+  .person-info {
+    margin-left: 3vw;
+  }
+
+  .person-header {
+    width: fit-content;
+    margin: 0 0;
+  }
+
+  .classify {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .item-inner {
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .dots {
+    right: 5vw;
+    top: 4.5vh;
+  }
+
+  .item-header {
+    font-size: 1rem;
+  }
+
+  .time {
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .current-time {
+    margin: 0 0;
+    font-size: 1.8rem;
+  }
+
+  .previous-time {
+    margin: 0 0;
+    font-size: 1rem;
+    text-align: right;
+    width: 40vw;
+  }
+
+  .daily,
+  .weekly,
+  .monthly {
+    margin: 0 0;
+  }
+
+  .selfcare {
+    margin-bottom: 5vh;
+  }
+
+}

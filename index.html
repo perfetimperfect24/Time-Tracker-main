@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhaijaan+2&family=Roboto:wght@700&family=Rubik:wght@300&family=Space+Mono&family=Work+Sans:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phone.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👝 -->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="grid-item person">
+
+      <div class="item-person-inner">
+        <img id="person" src="images/image-jeremy.png" alt="">
+
+        <div class="person-info">
+          <span class="person-header">Report for</span>
+          <div class="name">
+            <span class="fname">Jeremy</span>
+            <span class="lname">Robson</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="classify">
+        <p class="daily">Daily</p>
+        <p class="weekly">Weekly</p>
+        <p class="monthly">Monthly</p>
+      </div>
+
+    </div>
+
+    <div class="grid-item work">
+      <img class="icon" src="images/icon-work.svg" alt="">
+      <div class="item-inner">
+
+        <div class="dots">
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="item-header">Work</p>
+        <div class="time">
+          <p class="current-time"></p>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid-item play">
+      <img class="icon" src="images/icon-play.svg" alt="">
+      <div class="item-inner">
+        <div class="dots">
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="item-header">Play</p>
+        <div class="time">
+          <p class="current-time"></p>
+          <p class="previous-time"></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-item study">
+      <img class="icon" src="images/icon-study.svg" alt="">
+      <div class="item-inner">
+        <div class="dots">
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="item-header">Study</p>
+        <div class="time">
+          <p class="current-time"></p>
+          <p class="previous-time"></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-item exercise">
+      <img class="icon" src="images/icon-exercise.svg" alt="">
+      <div class="item-inner">
+
+        <div class="dots">
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="item-header">Exercise</p>
+        <div class="time">
+          <p class="current-time"></p>
+          <p class="previous-time"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item social">
+      <img class="icon" src="images/icon-social.svg" alt="">
+
+      <div class="item-inner">
+        <div class="dots">
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="item-header">Social</p>
+        <div class="time">
+          <p class="current-time"></p>
+          <p class="previous-time"></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-item selfcare">
+      <img class="icon" src="images/icon-self-care.svg" alt="">
+
+      <div class="item-inner">
+
+        <div class="dots">
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+
+        <p class="item-header">Self Care</p>
+        <div class="time">
+          <p class="current-time"></p>
+          <p class="previous-time"></p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="data.json"></script>
+  <script src="script.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
